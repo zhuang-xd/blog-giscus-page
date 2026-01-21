@@ -1,0 +1,1 @@
+ffmpeg -i 640_360_30.mp4 -s 800x400  -pix_fmt rgba 800_400_60.rgb

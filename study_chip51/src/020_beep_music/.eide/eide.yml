@@ -1,0 +1,61 @@
+version: "4.1"
+name: main
+type: C51
+deviceName: null
+packDir: null
+srcDirs: []
+virtualFolder:
+  name: <virtual_root>
+  files: []
+  folders:
+    - name: Source Group 1
+      files:
+        - path: src/main.c
+        - path: src/Com/Com_Util.c
+        - path: src/Com/Com_Util.h
+        - path: src/Dri/Dri_Timer0.c
+        - path: src/Dri/Dri_Timer0.h
+        - path: src/Int/Int_Beep.c
+        - path: src/Int/Int_Beep.h
+      folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: 524fb898ca3b8c50973d2a2830a95256
+targets:
+  Target 1:
+    cppPreprocessAttrs:
+      defineList: []
+      incList:
+        - ../../../../../../AppData/Local/Programs/Keil_v5/C51/INC/Atmel
+      libList: []
+    excludeList: []
+    toolchain: Keil_C51
+    toolchainConfigMap:
+      Keil_C51:
+        options:
+          version: 2
+          afterBuildTasks: []
+          asm-compiler: {}
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            optimization-level: level-8
+            optimization-type: SPEED
+          global:
+            ram-mode: SMALL
+            rom-mode: LARGE
+          linker:
+            misc-controls: ""
+            output-format: elf
+            remove-unused: true
+    uploadConfigMap:
+      Custom:
+        bin: ""
+        commandLine: ""
+        eraseChipCommand: ""
+      stcgal:
+        bin: .\build\Target 1\main.hex
+        eepromImgPath: "null"
+        extraOptions: ""
+        options: .eide/stc.flash.json
+    uploader: stcgal

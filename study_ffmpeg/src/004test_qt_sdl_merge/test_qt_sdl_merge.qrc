@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/test_qt_sdl_merge">
+        <file>assets/img1.png</file>
+        <file>assets/img2.png</file>
+    </qresource>
+</RCC>

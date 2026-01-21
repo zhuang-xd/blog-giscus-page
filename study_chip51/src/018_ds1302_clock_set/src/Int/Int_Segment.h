@@ -1,0 +1,9 @@
+#ifndef __INT_SEGMENT_H__
+#define __INT_SEGMENT_H__
+
+#include "../Com/Com_Util.h"
+
+void Int_init_segment();
+void Int_show_num(u8 chip_sel, u8 seg_sel);
+
+#endif

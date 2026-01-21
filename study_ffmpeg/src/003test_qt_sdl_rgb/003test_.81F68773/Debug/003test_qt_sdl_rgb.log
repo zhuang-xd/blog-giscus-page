@@ -1,0 +1,8 @@
+﻿   Qt/MSBuild: 3.4.1.0
+  Reading Qt configuration (C:/Users/Shelton/AppData/Local/Programs/Qt/Qt5.14.2/5.14.2/msvc2017/bin/qmake)
+   Qt: 5.14.2
+  test_qt_sdl_rgb.cpp
+  main.cpp
+  qrc_test_qt_sdl_rgb.cpp
+  moc_test_qt_sdl_rgb.cpp
+  003test_qt_sdl_rgb.vcxproj -> C:\Users\Shelton\Workspaces\code\vs\study_ffmpeg\src\003test_qt_sdl_rgb\Debug\003test_qt_sdl_rgb.exe

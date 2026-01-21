@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "003test_qt_sdl_merge", "003test_qt_sdl_merge.vcxproj", "{EA7DAAE3-42AA-422B-A7B3-87C41DE4B5C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA7DAAE3-42AA-422B-A7B3-87C41DE4B5C6}.Debug|x86.ActiveCfg = Debug|Win32
+		{EA7DAAE3-42AA-422B-A7B3-87C41DE4B5C6}.Debug|x86.Build.0 = Debug|Win32
+		{EA7DAAE3-42AA-422B-A7B3-87C41DE4B5C6}.Release|x86.ActiveCfg = Release|Win32
+		{EA7DAAE3-42AA-422B-A7B3-87C41DE4B5C6}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46FA1EEC-8BEF-4ADA-A264-C94429101A16}
+	EndGlobalSection
+EndGlobal
