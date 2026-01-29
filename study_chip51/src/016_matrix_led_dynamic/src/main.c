@@ -14,6 +14,8 @@ void main()
 {
     u8 i,bmp_size, offset = 0;
     Int_init_matrix_led();
+
+    
     
     bmp_size = sizeof(bmp)/sizeof(u8);
     while (1) {
