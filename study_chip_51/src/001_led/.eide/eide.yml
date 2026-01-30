@@ -1,0 +1,83 @@
+version: "4.1"
+name: main
+type: C51
+deviceName: null
+packDir: null
+srcDirs: []
+virtualFolder:
+  name: <virtual_root>
+  files:
+    - path: main.c
+  folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: ff46ffa2773e1c6cbbab1a02da1745c6
+targets:
+  Debug:
+    cppPreprocessAttrs:
+      defineList: []
+      incList: []
+      libList: []
+    excludeList: []
+    toolchain: Keil_C51
+    toolchainConfigMap:
+      GNU_SDCC_MCS51:
+        linkerScript: "null"
+        options:
+          version: 1
+          afterBuildTasks: []
+          asm-compiler: {}
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            language-c: c99
+          global:
+            code-size: "8192"
+            iram-size: "128"
+            mem-model: small
+            optimize-type: speed
+            xram-size: "0"
+          linker:
+            output-format: elf
+            remove-unused-input-sections: true
+      Keil_C51:
+        options:
+          version: 2
+          afterBuildTasks: []
+          asm-compiler: {}
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            optimization-level: level-8
+            optimization-type: SPEED
+          global:
+            ram-mode: SMALL
+            rom-mode: LARGE
+          linker:
+            output-format: elf
+            remove-unused: true
+      SDCC:
+        options:
+          version: 3
+          afterBuildTasks: []
+          asm-compiler: {}
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            language-c: c99
+          global:
+            device: mcs51
+            optimize-type: speed
+            use-non-free: false
+          linker:
+            $mainFileName: main
+            output-format: hex
+    uploadConfigMap:
+      Custom:
+        bin: main.hex
+        commandLine: ""
+        eraseChipCommand: ""
+      stcgal:
+        bin: ""
+        eepromImgPath: "null"
+        extraOptions: ""
+        options: .eide/stc.flash.json
+    uploader: stcgal

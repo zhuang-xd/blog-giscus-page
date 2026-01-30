@@ -1,4 +1,5 @@
-#include <REGX52.H>
+#include <REG52.H>
+
 void Delay1ms(unsigned char xms)
 {
 	unsigned char i,j;

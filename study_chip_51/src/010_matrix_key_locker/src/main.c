@@ -13,18 +13,15 @@
 
 void main()
 {
-#ifdef modules
 	u8 i = 0;
 	LCD_Init();
-	LCD_ShowString(1,1"Password: ");
-
-	u8 code = "1234";
+	LCD_ShowString(1,1,"Password: ");
 
 	while (1)
 	{
 		for (i = 1; i <= 4; i++)
 		{
-			Int_matrix_key_scan_row(4);
+			Int_matrix_key_scan(i);
 		}
 	}	
 }

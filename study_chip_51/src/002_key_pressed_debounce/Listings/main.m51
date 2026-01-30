@@ -1,0 +1,168 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        01/29/2026  18:18:35  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\USERS\SHELTON\APPDATA\LOCAL\PROGRAMS\KEIL_V5\C51\BIN\BL51.EXE .\Objects\STARTUP.obj, .\Objects\main.obj TO .\Objects\
+>> main PRINT (.\Listings\main.m51)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\STARTUP.obj (?C_STARTUP)
+  .\Objects\main.obj (MAIN)
+
+
+LINK MAP OF MODULE:  .\Objects\main (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0018H     UNIT         ?PR?MAIN?MAIN
+            CODE    001BH     000FH     UNIT         ?PR?_DELAYMS?MAIN
+            CODE    002AH     000CH     UNIT         ?C_C51STARTUP
+            CODE    0036H     0004H     UNIT         ?PR?LEDON?MAIN
+            CODE    003AH     0004H     UNIT         ?PR?LEDOFF?MAIN
+            CODE    003EH     0003H     UNIT         ?PR?LEDTOGGLE?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\main (?C_STARTUP)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN
+  +--> ?PR?_DELAYMS?MAIN
+  +--> ?PR?LEDTOGGLE?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\main (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:002AH         SEGMENT       ?C_C51STARTUP
+  I:0008H         SEGMENT       ?STACK
+  C:0000H         PUBLIC        ?C_STARTUP
+BL51 BANKED LINKER/LOCATER V6.22                                                      01/29/2026  18:18:35  PAGE 2
+
+
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:002DH         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0100H         SYMBOL        PBPSTACKTOP
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:002AH         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:0000H         LINE#         126
+  C:002AH         LINE#         133
+  C:002CH         LINE#         134
+  C:002DH         LINE#         135
+  C:002EH         LINE#         136
+  C:0030H         LINE#         185
+  C:0033H         LINE#         196
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  B:00A0H.0       PUBLIC        P2_0
+  B:00B0H.1       PUBLIC        P3_1
+  C:0003H         PUBLIC        main
+  C:003AH         PUBLIC        LedOff
+  C:001BH         PUBLIC        _DelayMs
+  C:0036H         PUBLIC        LedOn
+  C:003EH         PUBLIC        LedToggle
+  -------         PROC          _DELAYMS
+  D:0007H         SYMBOL        xms
+  -------         DO            
+  D:0006H         SYMBOL        i
+  D:0005H         SYMBOL        j
+  -------         ENDDO         
+  C:001BH         LINE#         3
+  C:001BH         LINE#         4
+  C:001BH         LINE#         6
+  C:001EH         LINE#         7
+  C:001EH         LINE#         8
+  C:0020H         LINE#         9
+  C:0022H         LINE#         11
+  C:0022H         LINE#         12
+  C:0024H         LINE#         13
+  C:0026H         LINE#         14
+  C:0027H         LINE#         15
+BL51 BANKED LINKER/LOCATER V6.22                                                      01/29/2026  18:18:35  PAGE 3
+
+
+  C:0029H         LINE#         16
+  -------         ENDPROC       _DELAYMS
+  -------         PROC          LEDON
+  C:0036H         LINE#         18
+  C:0036H         LINE#         19
+  C:0036H         LINE#         20
+  C:0039H         LINE#         21
+  -------         ENDPROC       LEDON
+  -------         PROC          LEDOFF
+  C:003AH         LINE#         23
+  C:003AH         LINE#         24
+  C:003AH         LINE#         25
+  C:003DH         LINE#         26
+  -------         ENDPROC       LEDOFF
+  -------         PROC          LEDTOGGLE
+  C:003EH         LINE#         28
+  C:003EH         LINE#         29
+  C:003EH         LINE#         30
+  C:0040H         LINE#         31
+  -------         ENDPROC       LEDTOGGLE
+  -------         PROC          MAIN
+  C:0003H         LINE#         33
+  C:0003H         LINE#         34
+  C:0003H         LINE#         35
+  C:0006H         LINE#         37
+  C:0006H         LINE#         38
+  C:0006H         LINE#         39
+  C:0009H         LINE#         40
+  C:000EH         LINE#         42
+  C:0011H         LINE#         43
+  C:0016H         LINE#         45
+  C:0019H         LINE#         46
+  C:0019H         LINE#         47
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LEDON?MAIN
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LEDOFF?MAIN
+
+Program Size: data=9.0 xdata=0 code=65
+LINK/LOCATE RUN COMPLETE.  2 WARNING(S),  0 ERROR(S)

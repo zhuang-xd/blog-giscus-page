@@ -7,7 +7,7 @@ typedef unsigned long  u32;
 
 void Com_Util_DelayMs(u8 xms);
 void Com_int_to_str(int num, char *str);
-void Com_sprintf_2d(char *buffer, const char *format, int value1, int value2) ;
-void Com_get_row_col(u16 num, int *row, int *col) 
+void Com_sprintf_2d(char *buffer, const char *format, int value1, int value2);
+void Com_get_row_col(u16 num, int *row, int *col);
 
 #endif //_COM_UTIL_H_

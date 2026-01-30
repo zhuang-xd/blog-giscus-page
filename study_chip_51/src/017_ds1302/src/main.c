@@ -2,9 +2,6 @@
 #include "Int/Int_DS1302.h"
 #include "Int/LCD1602.h"
 
-
-
-
 // 修改后的主函数
 void main()
 {

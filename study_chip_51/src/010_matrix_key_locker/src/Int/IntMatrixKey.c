@@ -6,7 +6,7 @@
 void Int_matrix_key_scan(u16 num)
 {
     u16 i,row,col;
-    Com_get_row_col(num,&row,&col)
+    Com_get_row_col(num,&row,&col);
     P1 = 0xFF;                // 清空选中
     switch (row)
     {
@@ -31,19 +31,19 @@ void Int_matrix_key_scan_col(u16 col)
 
     if (P1_3 == 0) { 		// 第1列
         Com_Util_DelayMs(10);while (P1_3 == 0);Com_Util_DelayMs(10);
-        Com_sprintf_2d(buf, "key pressed %d*%d",row, 1);
+        Com_sprintf_2d(buf, "key pressed %d*%d",col, 1);
         LCD_ShowString(2,1, buf);
     } else if (P1_2 == 0) { // 第2列
         Com_Util_DelayMs(10);while (P1_2 == 0);Com_Util_DelayMs(10);
-        Com_sprintf_2d(buf, "key pressed %d*%d",row, 2);
+        Com_sprintf_2d(buf, "key pressed %d*%d",col, 2);
         LCD_ShowString(2,1, buf);
     }else if (P1_1 == 0) { 	// 第3列		
         Com_Util_DelayMs(10);while (P1_1 == 0);Com_Util_DelayMs(10);
-        Com_sprintf_2d(buf, "key pressed %d*%d",row, 3);
+        Com_sprintf_2d(buf, "key pressed %d*%d",col, 3);
         LCD_ShowString(2,1, buf);
     }else if (P1_0 == 0) {	// 第4列	
         Com_Util_DelayMs(10);while (P1_0 == 0);Com_Util_DelayMs(10);
-        Com_sprintf_2d(buf, "key pressed %d*%d",row, 4);
+        Com_sprintf_2d(buf, "key pressed %d*%d",col, 4);
         LCD_ShowString(2,1, buf);
     }
 }
