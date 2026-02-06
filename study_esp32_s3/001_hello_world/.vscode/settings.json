@@ -1,0 +1,16 @@
+{
+  "idf.openOcdConfigs": [
+    "board/esp32s3-bridge.cfg"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32s3"
+  },
+  "clangd.path": "C:\\Users\\Shelton\\.espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=c:\\Users\\Shelton\\Workspaces\\code\\blog-giscus-page\\study_esp32_s3\\001_get-started\\hello_world\\build"
+  ],
+  "idf.flashType": "UART",
+  "idf.portWin": "COM9"
+}
